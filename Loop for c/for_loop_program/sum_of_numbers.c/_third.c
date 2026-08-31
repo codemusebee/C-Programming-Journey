@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main ()
+{
+    int sum=0;
+     for(int i=1; i<=50; i++)
+     {
+        if(i%2==0)
+        {
+            sum=sum+i;
+        }
+     }
+     printf("Sum of first 50 even numbers is %d\n",sum);
+     
+     return 0;
+}
