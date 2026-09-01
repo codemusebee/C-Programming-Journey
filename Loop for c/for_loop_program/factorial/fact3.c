@@ -1,17 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-    int fact=1;
-    printf("factorial from number 1 to 5 is: ");
-     for(int i=1;i<=5;i++)
-     { 
-        for(int i=1;i<=5;i++)
+    int fact;
 
-         {
-         fact=fact*i;
+    printf("Factorials from 1 to 5:\n");
+
+    for(int n = 1; n <= 5; n++)
+    {
+        fact = 1;
+
+        for(int i = 1; i <= n; i++)
+        {
+            fact = fact * i;
         }
 
+        printf("%d! = %d\n", n, fact);
     }
-     printf("%d", fact);
-     return 0;
+
+    return 0;
 }
