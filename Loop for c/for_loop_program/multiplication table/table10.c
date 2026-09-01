@@ -13,7 +13,7 @@ int main()
 {
     for(int i = 1; i <= 10; i++)
     {
-        if((table * i) % 2 == 0)
+        if((table * i) % 3 == 0)
         {
             printf("%d * %d = %d\n", table, i, table * i);
         }
